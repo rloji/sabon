@@ -1,0 +1,239 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Hahmlet:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Hahmlet:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+body {
+    background: #fff;
+    font-family: 'Hahmlet';
+    letter-spacing: -0.5px;
+}
+
+h1,
+h2 {
+    font-family: 'Playfair Display';
+}
+
+h1 {
+    color: #412d19;
+}
+
+h2 {
+    color: #65492d;
+}
+
+/* headerTop */
+.bgTop {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 50px;
+    background: #413833;
+    z-index: 98;
+}
+
+.headerTop {
+    position: relative;
+    margin: 0 auto;
+    width: 1440px;
+    height: 100%;
+    line-height: 50px;
+    z-index: 99;
+}
+
+.headerTop ul {
+    position: absolute;
+    right: 0;
+    height: 100%;
+}
+
+.headerTop ul a {
+    position: relative;
+    height: 50px;
+    font-size: 14px;
+    color: #999593;
+    padding-left: 5px;
+}
+
+.headerTop ul a span {
+    padding-left: 5px;
+}
+
+.headerTop ul a img {
+    position: relative;
+    top: 3px;
+    padding-left: 5px;
+}
+
+/* main */
+
+main {
+    width: 1920px;
+    height: 750px;
+    margin: 0 auto;
+    background-color: #fff;
+    position: relative;
+}
+
+main .cart {
+    margin: 50px auto;
+    font-weight: bold;
+    font-size: 45px;
+    text-align: center;
+    font-family: 'Playfair Display';
+}
+
+main .empty {
+    text-align: center;
+    font-size: 25px;
+    margin-top: 25px;
+    margin: 25px auto;
+    font-family: 'Hahmlet';
+    color: #707070;
+
+}
+
+main .shopping {
+    margin: 100px auto;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+main .shopping .continue {
+    width: 180px;
+    height: 48px;
+    padding: 15px 0;
+    border: 1px solid #54301A;
+    line-height: 48px;
+    cursor: pointer;
+
+}
+
+main .shopping .continue p {
+    text-align: center;
+    font-family: 'Hahmlet';
+    font-size: 18px;
+    color: #54301a;
+
+    
+
+}
+
+main .shopping .allBuy {
+    width: 180px;
+    height: 48px;
+    padding: 15px 0;
+    background-color: #54301A;
+    border: 1px solid #54301A;
+    line-height: 48px;
+    cursor: pointer;
+}
+
+main .shopping .allBuy p{
+    text-align: center;
+    font-family: 'Hahmlet';
+    font-size: 18px;
+    color: #fff;
+}
+
+main .top {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 75px;
+    margin-right: 150px;
+}
+
+/* footer */
+footer {
+    position: relative;
+    width: 100%;
+    height: 530px;
+    left: 0;
+    background: #322B27;
+    /* text-align: center; */
+}
+
+footer p,
+footer p a,
+footer span {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    color: rgba(255, 255, 255, 0.5);
+    padding-bottom: 10px;
+}
+
+footer .foot1 {
+    width: 1440px;
+    height: 332px;
+    margin: 0 auto;
+    display: flex;
+    /* align-items: center; */
+    /* 수정되면 얘로 패딩값 확인하기 */
+    justify-content: space-between;
+}
+
+footer .foot1 h6 {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+footer .foot1 .instagramIcon img {
+    padding-top: 5px;
+}
+
+footer .foot1 .customerCenter,
+footer .foot1 .links,
+footer .foot1 .account,
+footer .foot1 .product {
+    position: relative;
+    height: 270px;
+    padding-top: 62px;
+}
+
+footer .foot1 .product .pro {
+    columns: 2;
+}
+
+footer .foot2 {
+    width: 1440px;
+    height: 86px;
+    margin: 0 auto;
+    border-top: 1px solid #5b5552;
+    text-align: center;
+}
+
+footer .foot2 div {
+    display: inline-block;
+    width: 1px;
+    height: 10px;
+    background: #635f5d;
+    margin: 0 8px 0 10px;
+}
+
+footer .blogo {
+    width: 1440px;
+    height: 70px;
+    margin: 5px auto;
+    text-align: center;
+}
