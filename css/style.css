@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Hahmlet:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Hahmlet:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 * {margin: 0; padding: 0;
 }
 li {
@@ -25,6 +26,10 @@ h1 {
 h2 {
     color: #65492d;
 }
+.mb_headerTop,
+.mb_slide {
+    display: none;
+}
 
 /* headerTop */
 .bgTop {
@@ -43,6 +48,9 @@ h2 {
     line-height: 50px;
     z-index: 99;
 }
+.bgTop .mb_headerTop {
+    display: none;
+}
 .headerTop ul {
     position: absolute;
     right: 0;
@@ -54,6 +62,7 @@ h2 {
     font-size: 14px;
     color: #999593;
     padding-left: 5px;
+    display: inline-block;
 }
 .headerTop ul a span {
     padding-left: 5px;
@@ -106,6 +115,7 @@ h2 {
     /* border: 2px solid blue; */
     display: flex;
     /* justify-content: space-around; */
+    overflow: visible;
 }
 #wrap header nav ul.mainmenu li.menu-item {
     /* width: 100%; */
@@ -129,20 +139,22 @@ h2 {
     letter-spacing: -0.2px;
     text-align: center;
 }
-/* #wrap header nav ul.mainmenu li.menu-item h4 a {
-    
-} */
+#wrap header nav ul.mainmenu li.menu-item h4 a:hover,
+#wrap header nav ul.mainmenu li.menu-item .submenuText a:hover {
+    color: #371b0f;
+    font-weight: bold;
+}
 #wrap header nav ul.mainmenu li.menu-item .submenuText {
     position: absolute;
     top: 100px;
     left: 113px;
     display: none;
+    letter-spacing: -0.7px;
     /* background: #f0e7de; */
     z-index: 60;
 }
 #wrap header nav ul.mainmenu li.menu-item .submenuText .subText {
     columns: 2;
-    
 }
 #wrap header nav ul.mainmenu li.menu-item .submenuText h2 {
     font-size: 24px;
@@ -152,6 +164,7 @@ h2 {
     margin-bottom: 25px;
 }
 #wrap header nav ul.mainmenu li.menu-item .submenuText p {
+    font-size: 14px;
     margin-bottom: 5px;
 }
 
@@ -159,20 +172,22 @@ h2 {
     position: absolute;
     width: 10000px;
     height: 373px;
-    top: 49px;
+    top: 50px;
     left: 0;
-    /* margin: 0 auto; */
+    margin: 0 auto;
     background: #f0e7de;
     z-index: 50;
     display: none;
+    /* overflow: visible; */
 }
 #wrap header nav ul.mainmenu .submenuImg img {
-    /* position: absolute; */
+    position: relative;
     top: 0;
-    left: 0;
-    width: 1440px;
+    /* left: -250px; */
+    right: 266px;
+    width: 1920px;
     height: 373px;
-    /* display: none; */
+    display: none;
 }
 #wrap header nav ul.mainmenu li.menu-item:hover .submenuImg img.active {
     display: block;
@@ -186,7 +201,7 @@ h2 {
     position: absolute;
     width: 100%;
     height: 560px;
-    top: 252px;
+    top: 253px;
     /* border: 3px solid red; */
 }
 #wrap .slide .slideList {
@@ -196,13 +211,17 @@ h2 {
     top: 250px;
     left: 0;
     /* border: 6px solid blue; */
+    transition: transform 0.5s ease-in-out;
 }
 #wrap .slide .slideList .slideImg {
     position: absolute;
-    display: none;
+    opacity: 0;
+    /* display: none; */
+    transition: opacity 0.5s ease;
 }
-#wrap .slide .slideList .slideImg:first-child {
-    display: block;
+#wrap .slide .slideList .slideImg.active {
+    /* display: block; */
+    opacity: 1;
 }
 #wrap .slide .slideList .slideImg img {
     position: absolute;
@@ -210,24 +229,24 @@ h2 {
     left: 0;
     object-fit: cover;
 }
-#wrap .slide .button {
+#wrap .slide .buttons {
     position: relative;
     width: 100%;
     height: 30px;
     bottom: 0;
     display: flex;
     justify-content: center;
-    cursor: pointer;
 }
-#wrap .slide .button div {
+#wrap .slide .buttons .button {
     position: relative;
     width: 10px;
     height: 10px;
     margin: 20px 5px;
     background: #ccc;
     border-radius: 50%;
+    cursor: pointer;
 }
-#wrap .slide .button div.active {
+#wrap .slide .buttons .button.active {
     background: #54301A;
 }
 
@@ -235,16 +254,16 @@ h2 {
 #wrap .section1 {
     position: relative;
     width: 100%;
-    height: 681px;
-    /* border: 1px solid red; */
+    max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
     text-align: center;
-    margin-top: 20px;
 }
 #wrap .section1 h1 {
     position: relative;
     /* background: orange; */
     font-size: 48px;
-    margin-top: 300px;
+    margin-top: 325px;
 }
 #wrap .section1 .titleBar {
     position: relative;
@@ -255,64 +274,97 @@ h2 {
     margin-top: 20px;
 }
 #wrap .section1 .sec1 {
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 432px;
-    /* border: 3px solid blue; */
-    margin-top: 50px;
+    max-width: 1440px;
+    margin: 0 auto;
     overflow: hidden;
 }
 #wrap .section1 .sec1 .btnPrev {
     position: absolute;
     left: 0;
     line-height: 432px;
+    cursor: pointer;
+    z-index: 50;
 }
 #wrap .section1 .sec1 .btnNext {
     position: absolute;
     right: 0;
     line-height: 432px;
+    cursor: pointer;
+    z-index: 50;
 }
 #wrap .section1 .sec1 .sec1_slide {
-    width: 150%;
-    /* div 6개를 수용할만큼 부모의 사이즈가 커야 overflow:hidden이 적용됨 */
-    height: 100%;
     display: flex;
+    overflow: hidden;
 }
-#wrap .section1 .sec1 .sec1_slide div {
-    position: relative;
-    margin: 0 auto;
-    width: 25%;
+#wrap .section1 .sec1 .sec1_slide>div {
+    flex: 0 0 25%; /* 4개의 슬라이드가 한 번에 보이도록 설정 */
+    box-sizing: border-box;
+    width: 360px;
     height: 430px;
+    margin: 50px 0;
+    text-align: center;
     border-bottom: 2px solid #E1E1E1;
     transition: border 0.3s ease;
-}
-#wrap .section1 .sec1 .sec1_slide div:hover {
-    border-bottom: 2px solid #54301a;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 #wrap .section1 .sec1 .sec1_slide div a img {
     width: 250px;
     height: 250px;
-    opacity: 1;
-    transition: opacity 0.3s ease;
-}
-#wrap .section1 .sec1 .sec1_slide div a img:hover {
-    opacity: 0.8;
-}
-#wrap .section1 .sec1 .sec1_slide div span {
-    /* position: relative; */
     display: block;
+    /* top: 10px; */
+    opacity: 1;
+    transition: 0.3s ease;
 }
-#wrap .section1 .sec1 .sec1_slide div span.productName {
-    margin-top: 20px;
-    color: #000;
-    font-weight: bold;
+#wrap .section1 .sec1 .sec1_slide div .slick-text {
+    width: 360px;
+    height: 180px;
+    border: none;
 }
-#wrap .section1 .sec1 .sec1_slide div span.volume {
-    color: #585858;
+#wrap .section1 .sec1 .sec1_slide .slick-text .productName {
+    font-size: 17px;
+    font-weight: 500;
+    margin-top: 10px;
+    letter-spacing: -0.7px;
 }
-#wrap .section1 .sec1 .sec1_slide div span.price {
+#wrap .section1 .sec1 .sec1_slide .slick-text .volume {
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    /* border: 1px solid blue; */
+}
+#wrap .section1 .sec1 .sec1_slide .slick-text .price {
+    font-size: 12px;
     color: #714633;
-    margin-top: 25px;
+    margin: 25px 0 50px 0;
+    /* border: 1px solid green; */
+}
+/* #wrap .section1 .sec1 .btnNext slick-track {
+    display: flex;
+} */
+/* #wrap .section1 .sec1 .sec1_slide div {
+    position: relative;
+    margin: 0 auto;
+    width: 25% !important;
+    height: 430px;
+    border-bottom: 2px solid #E1E1E1;
+    transition: border 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+#wrap .section1 .sec1 .sec1_slide>div:hover {
+    border-bottom: 2px solid #54301a;
+}
+#wrap .section1 .sec1 .sec1_slide>div:hover img {
+    opacity: 0.8;
+    transition: 0.3s ease;
 }
 
 /* section2 */
@@ -320,9 +372,10 @@ h2 {
     width: 100%;
     height: 909px;
     text-align: center;
+    margin-top: 60px;
 }
 #wrap .section2 h1 {
-    font-style: 48px;
+    font-size: 48px;
 }
 #wrap .section2 .titleBar {
     position: relative;
@@ -555,3 +608,77 @@ footer .blogo {
     margin: 5px auto;
     text-align: center;
 }
+
+/* ---------- mobile ---------- */
+@media (max-width: 768px) {
+    .bgTop {
+        position: relative;
+        height: 125px;
+        background: #fff;
+        align-items: center;
+    }
+    .bgTop .headerTop,
+    header,
+    .slide {
+        display: none;
+    }
+    .bgTop .mb_headerTop {
+        width: 100%;
+        height: 100%;
+        display: block;
+        text-align: center;
+    }
+    .bgTop .mb_headerTop .toggle {
+        position: absolute;
+        width: 45px;
+        height: 34px;
+        top: 42px;
+        left: 45px;
+    }
+    .bgTop .mb_headerTop .toggle img {
+        width: 45px;
+        height: 34px;
+    }
+    .bgTop .mb_headerTop .mb_logo img {
+        position: relative;
+        width: 126px;
+        height: 79px;
+        top: 23px;
+    }
+    .bgTop .mb_headerTop .mb_search img {
+        position: absolute;
+        width: 45px;
+        height: 43px;
+        top: 39px;
+        right: 112px;
+    }
+    .bgTop .mb_headerTop .mb_basket img {
+        position: absolute;
+        width: 45px;
+        height: 54px;
+        top: 29px;
+        right: 48px;
+    }
+    .mb_slideList {
+        display: block;
+        width: 100%;
+        top: -50px;
+    }
+    .mb_slideList .mb_slide {
+        display: none;
+        width: 100%;
+        top: -50px;
+        margin: auto;
+    }
+    .mb_slideList .mb_slide a img {
+        width: 100vw;
+        top: 0;
+    }
+    .mb_slideList .mb_slide .fade {
+        animation-name: fadeEffect;
+        animation-duration: 1.5s;
+    }
+    @keyframes fadeEffect {
+        from {opacity: 0.4;}
+        to {opacity: 1;}
+    }
