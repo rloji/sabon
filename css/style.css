@@ -26,8 +26,8 @@ h1 {
 h2 {
     color: #65492d;
 }
-.mb_headerTop,
-.mb_slide {
+.bgTop:nth-of-type(2)
+#mb_wrap {
     display: none;
 }
 
@@ -612,14 +612,15 @@ footer .blogo {
 /* ---------- mobile ---------- */
 @media (max-width: 768px) {
     .bgTop {
+        display: block !important;
         position: relative;
         height: 125px;
         background: #fff;
         align-items: center;
     }
-    .bgTop .headerTop,
-    header,
-    .slide {
+    body:first-child,
+    #wrap,
+    footer {
         display: none;
     }
     .bgTop .mb_headerTop {
@@ -660,15 +661,16 @@ footer .blogo {
         right: 48px;
     }
     .mb_slideList {
+        position: relative;
         display: block;
         width: 100%;
         top: -50px;
     }
     .mb_slideList .mb_slide {
-        display: none;
+        /* display: none; */
+        display: block;
         width: 100%;
-        top: -50px;
-        margin: auto;
+        /* margin: auto; */
     }
     .mb_slideList .mb_slide a img {
         width: 100vw;
@@ -678,7 +680,94 @@ footer .blogo {
         animation-name: fadeEffect;
         animation-duration: 1.5s;
     }
+    .mb_slideList .buttons {
+        display: block;
+        position: absolute;
+        /* top: 100px; */
+        z-index: 800;
+    }
+    .buttons .button {
+        position: relative;
+        display: block;
+    }
     @keyframes fadeEffect {
         from {opacity: 0.4;}
         to {opacity: 1;}
     }
+    .mb_footer {
+        position: relative;
+        width: 768px;
+        height: 821px;
+        /* display: flex; */
+        /* flex-wrap: wrap; */
+        text-align: center;
+        justify-content: space-around;
+        overflow: visible;
+        color: #bdbcbb;
+    }
+    .mb_footer .footerBg {
+        position: absolute;
+        width: 10000px;
+        height: 821px;
+        background: #27201b;
+        /* background: #ddd; */
+        z-index: -1;
+    }
+    .mb_footer .firstFoot {
+        /* position: relative; */
+        width: 768px;
+        height: 80px;
+        line-height: 80px;
+        display: flex;
+        background: #201a16;
+        align-items: center;
+    }
+    .mb_footer .firstFoot a {
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: -1px;
+        margin: 0 auto;
+        color: #fff;
+    }
+    .mb_footer .firstFoot div {
+        width: 2px;
+        height: 15px;
+        background: #7d7d7d;
+    }
+    .mb_footer a img {
+        width: 158px;
+        height: 98px;
+    }
+    .mb_footer>a {
+        position: relative;
+        top: 40px;
+    }
+    .mb_footer p:first-of-type {
+        font-size: 35px;
+        font-weight: 500;
+        letter-spacing: -1px;
+        margin-top: 60px;
+    }
+    .mb_footer>p:nth-child(5) {
+        font-size: 24px;
+        letter-spacing: -1px;
+        margin-top: 10px;
+    }
+    .mb_footer>p:nth-child(5) a {
+        color: #bdbcbb;
+    }
+    .mb_footer>p:nth-child(6) {
+        font-size: 35px;
+        letter-spacing: -1px;
+        margin-top: 50px;
+    }
+    .mb_footer h3 {
+        font-size: 60px;
+        letter-spacing: -1px;
+        margin-top: -10px;
+    }
+    .mb_footer>p:nth-child(8) {
+        font-size: 24px;
+        color: #666;
+    }
+}
