@@ -1,13 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>장바구니페이지</title>
-    <link rel="stylesheet" href="./css/substyle.css">
+    <link rel="stylesheet" href="./css/basketstyle.css">
     <script src="./script/jquery-1.12.3.js"></script>
-    <script src="./script/productscript.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script/script.js"></script>
 </head>
 
 <body>
@@ -16,84 +17,264 @@
         <div class="headerTop">
             <ul>
                 <a href="#">LOGIN <span>/</span></a>
-                <a href="#">JOIN US</a>
-                <a href="#"><img src="./images/mainPage/headerTop_icon1.png" alt="매장안내"><span> 매장안내</span></a>
-                <a href="#"><img src="./images/mainPage/headerTop_icon2.png" alt="장바구니"></a>
-                <a href="#"><img src="./images/mainPage/headerTop_icon3.png" alt="검색하기"></a>
+                <a href="#">JOIN US</a> 
+                <a href="#"><img src="./images/svg/storeIcon.svg" alt="매장안내"><span> 매장안내</span></a>
+                <a href="./basket.html"><img src="./images/svg/cartIcon.svg" alt="장바구니"></a>
+                <a href="#"><img src="./images/svg/serchIcon.svg" alt="검색하기"></a>
             </ul>
         </div>
     </div>
+    <div id="wrap">
+        <header>
+            <div class="toggle"><img src="./images/svg/toggle.svg" alt="mobile menu"></div>
+            <div class="logo"><img src="./images/mainPage/sabon_logo.png" alt="로고"></div>
+            <nav class="menu">
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">배쓰 / 바디케어</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>배쓰 / 바디케어<div class="arrow"></div></h2>
+                                <p><a href="#">바디 스크럽</a></p>
+                                <p><a href="#">샤워 오일</a></p>
+                                <p><a href="#">바디 로션</a></p>
+                                <p><a href="#">입욕제</a></p>
+                                <p><a href="#">솝</a></p>
+                                <p><a href="#">액세서리</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu1.png" alt="배쓰 / 바디케어"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">핸드 / 풋케어</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>핸드 / 풋케어<div class="arrow"></div></h2>
+                                <p><a href="#">핸드크림</a></p>
+                                <p><a href="#">핸드솝</a></p>
+                                <p><a href="#">핸드 스크럽</a></p>
+                                <p><a href="#">풋케어</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu2.png" alt="핸드 / 풋케어"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">헤어 케어</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>헤어 케어<div class="arrow"></div></h2>
+                                <p><a href="#">스크럽</a></p>
+                                <p><a href="#">샴푸</a></p>
+                                <p><a href="#">세럼</a></p>
+                                <p><a href="#">마스크</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu3.png" alt="헤어 케어"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">스킨 케어</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>스킨 케어<div class="arrow"></div></h2>
+                                <p><a href="#">클렌저</a></p>
+                                <p><a href="#">트리트먼트</a></p>
+                                <p><a href="#">페이셜마스크</a></p>
+                                <p><a href="#">립케어</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu4.png" alt="스킨 케어"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">홈 & 향수</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>홈 & 향수<div class="arrow"></div></h2>
+                                <p><a href="#">아로마 디퓨저</a></p>
+                                <p><a href="#">향수</a></p>
+                                <p><a href="#">패브릭미스트</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu5.png" alt="홈 & 향수"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">향 / 컬렉션</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>향 / 컬렉션<div class="arrow"></div></h2>
+                                <div class="subText">
+                                <p><a href="#">자스민</a></p>
+                                <p><a href="#">라벤더애플</a></p>
+                                <p><a href="#">파출리라벤더바닐라</a></p>
+                                <p><a href="#">그린로즈</a></p>
+                                <p><a href="#">로즈티</a></p>
+                                <p><a href="#">머스크</a></p>
+                                <p><a href="#">시트러스 블라썸</a></p>
+                                <p><a href="#">화이트티</a></p>
+                                <p><a href="#">진저오렌지</a></p>
+                                <p><a href="#">사해</a></p>
+                                <p><a href="#">젠틀맨</a></p>
+                                <p><a href="#">화이트로즈</a></p>
+                                <p><a href="#">센서리가든</a></p>
+                                <p><a href="#">파리켈렉션</a></p>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu6.png" alt="향 / 컬렉션"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">선물 추천</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>선물 추천<div class="arrow"></div></h2>
+                                <p><a href="#">GIFT SETS</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu7.png" alt="선물 추천"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">SALE</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>SALE<div class="arrow"></div></h2>
+                                <p><a href="#">SPECIAL PRICE</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu8.png" alt="SALE"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">ABOUT US</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>ABOUT US<div class="arrow"></div></h2>
+                                <p><a href="#">브랜드 스토리</a></p>
+                                <p><a href="#">SABON 3 Steps</a></p>
+                                <p><a href="#">FALL IN SCRUB</a></p>
+                                <p><a href="#">HOW TO OPEN SCRUB</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu9.png" alt="ABOUT US"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">멤버십 혜택</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>멤버십 혜택<div class="arrow"></div></h2>
+                                <p><a href="#">MEMBERSHIP PROGRAM</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu10.png" alt="멤버십 혜택"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu"><li class="menu-item"><h4><a href="#">이달의 프로모션</a></h4></li></ul>
+                <ul class="mainmenu"><li class="menu-item"><h4><a href="#">기업용 선물 서비스</a></h4></li></ul>
+            </nav>
+            <div class="mobileMenu">
+                <ul>
+                    <li><a href="#"><img src="./images/svg/serchIcon_gray.svg" alt="검색"></a></li>
+                    <li><a href="#"><img src="./images/svg/cartIcon_gray.svg" alt="장바구니"></a></li>
+                </ul>
+            </div>
+        </header>
 
-    <!-- main -->
-    <main>
-        <div class="cart">
-            <a href="#">
-                <p>CART</p>
-            </a>
-        </div>
-       <div class="empty"> <p>장바구니가 비어 있습니다.</p> </div>
-        <div class="shopping">
-            <div class="continue">
-                <p>쇼핑 계속</p>
+        <!-- main -->
+        <main>
+            <div class="cart">
+                <a href="#">
+                    <p>CART</p>
+                </a>
             </div>
-            <div class="allBuy">
-                <p> 전체상품 바로 주문 </p>
-            </div>
-        </div>
-        <div class="top"><a href="#"><img src="./images/subPage/topImg.png" alt="topImg"></a></div>
-    </main>
-
-
-
-    <!-- footer -->
-    <footer>
-        <div class="foot1">
-            <div class="customerCenter">
-                <h6>CUSTOMER CENTER</h6>
-                <p>06524 서울특별시 서초구 강남대로 629 (잠원동) BNF빌딩</p>
-                <p class="tel">전화번호 : 1833-6763<br>업무 시간 : 평일 오후 1시 30분 ~ 오후 4시, 공휴일 제외</p>
-                <p>팩스번호 : (02)2077-5670</p>
-                <p>이메일 : sabon@bnftrading.co.kr</p>
-                <a href="#" class="instagramIcon"><img src="./images/mainPage/side_instagram.png" alt="인스타그램 바로가기"></a>
-            </div>
-            <div class="links">
-                <h6>LINKS</h6>
-                <p><a href="#">이용약관</a></p>
-                <p><a href="#">개인정보 취급방침</a></p>
-                <p><a href="#">이용안내</a></p>
-            </div>
-            <div class="account">
-                <h6>ACCOUNT</h6>
-                <p><a href="#">로그인 / 회원가입</a></p>
-                <p><a href="#">아이디/비밀번호 찾기</a></p>
-            </div>
-            <div class="product">
-                <h6>PRODUCT</h6>
-                <div class="pro">
-                    <p><a href="#">배쓰 / 바디케어</a></p>
-                    <p><a href="#">핸드 / 풋케어</a></p>
-                    <p><a href="#">헤어 케어</a></p>
-                    <p><a href="#">스킨 케어</a></p>
-                    <p><a href="#">향 / 컬렉션</a></p>
-                    <p><a href="#">선물 추천</a></p>
-                    <p><a href="#">ABOUT US</a></p>
-                    <p><a href="#">MEMBERSHIP PROGRAM</a></p>
-                    <p><a href="#">이달의 프로모션</a></p>
-                    <p><a href="#">기업용 선물 서비스</a></p>
+        <div class="empty"> <p>장바구니가 비어 있습니다.</p> </div>
+            <div class="shopping">
+                <div class="continue">
+                    <a href="./index.html"><p>쇼핑 계속</p></a>
+                </div>
+                <div class="allBuy">
+                    <a href="#"><p>전체상품 바로 주문</p></a>
                 </div>
             </div>
+            <div class="top"><a href="#">TOP</a></div>
+        </main>
         </div>
-        <div class="foot2">
-            <br>
-            <span>(주)비엔에프통상</span>
-            <div></div><span>06524 서울특별시 서초구 강남대로 629 (잠원동) BNF빌딩</span><br>
-            <span>개인정보관리책임자 : 방소윤</span>
-            <div></div><span>사업자 등록번호 114-81-66275 [사업자정보확인]</span>
-            <div></div><span>통신판매업 신고번호 제 2014-서울서초-0604 호</span>
-            <div></div><span>대표자 : 조재성, 이효욱, 윤인권</span>
+
+         <!-- footer -->
+         <footer>
+            <div class="foot1">
+                <div class="customerCenter">
+                    <h6>CUSTOMER CENTER</h6>
+                    <p>06524 서울특별시 서초구 강남대로 629 (잠원동) BNF빌딩</p>
+                    <p class="tel">전화번호 : 1833-6763<br>업무 시간 : 평일 오후 1시 30분 ~ 오후 4시, 공휴일 제외</p>
+                    <p>팩스번호 : (02)2077-5670</p>
+                    <p>이메일 : sabon@bnftrading.co.kr</p>
+                    <a href="#" class="instagramIcon"><img src="./images/svg/instargramBtn.svg" alt="인스타그램 바로가기"></a>
+                </div>
+                <div class="links">
+                    <h6>LINKS</h6>
+                    <p><a href="#">이용약관</a></p>
+                    <p><a href="#">개인정보 취급방침</a></p>
+                    <p><a href="#">이용안내</a></p>
+                </div>
+                <div class="account">
+                    <h6>ACCOUNT</h6>
+                    <p><a href="#">로그인 / 회원가입</a></p>
+                    <p><a href="#">아이디/비밀번호 찾기</a></p>
+                </div>
+                <div class="product">
+                    <h6>PRODUCT</h6>
+                    <div class="pro">
+                        <p><a href="#">배쓰 / 바디케어</a></p><!--  -->
+                        <p><a href="#">핸드 / 풋케어</a></p>
+                        <p><a href="#">헤어 케어</a></p>
+                        <p><a href="#">스킨 케어</a></p>
+                        <p><a href="#">향 / 컬렉션</a></p>
+                        <p><a href="#">선물 추천</a></p>
+                        <p><a href="#">ABOUT US</a></p>
+                        <p><a href="#">MEMBERSHIP PROGRAM</a></p>
+                        <p><a href="#">이달의 프로모션</a></p>
+                        <p><a href="#">기업용 선물 서비스</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="foot2">
+                <br>
+                <span>(주)비엔에프통상</span>
+                <div></div><span>06524 서울특별시 서초구 강남대로 629 (잠원동) BNF빌딩</span><br>
+                <span>개인정보관리책임자 : 방소윤</span>
+                <div></div><span>사업자 등록번호 114-81-66275 [사업자정보확인]</span>
+                <div></div><span>통신판매업 신고번호 제 2014-서울서초-0604 호</span>
+                <div></div><span>대표자 : 조재성, 이효욱, 윤인권</span>
+            </div>
+            <div class="blogo"><a href="#"><img src="./images/mainPage/blogo.png" alt="바텀 로고"></a></div>
+        </footer>
+        <div id="mb_wrap">
+            <div class="mb_footer">
+                <div class="footerBg"></div>
+                <div class="firstFoot"><a href="#">이용약관</a><div></div><a href="#">개인정보 처리방침</a><div></div><a href="#">이용안내</a><div></div><a href="#">PC화면</a></div>
+                <a href="#" class="blogo"><img src="./images/mainPage(mobile)/blogo.png" alt="바텀 로고"></a>
+                <p>COMPANY INFO</p>
+                <p>(주)비엔에프통상 대표자 : 조재성, 이효욱, 윤인권<br>개인정보책임관리자 : <a href="#">방소윤(sabon@bnftrading.co.kr)</a><br>주소 : 06524 서울특별시 서초구 강남대로 629 (잠원동) BNF빌딩<br>사업자등록번호 : 114-81-66275 <a href="#">[사업자정보확인]</a><br>통신판매업신고 : 제 2014-서울서초-0604 호</p>
+                <p>CUSTOMER CENTER</p>
+                <h3>1833-6763</h3>
+                <p>업무 시간 : 평일 오후 1시 30분 ~ 오후 4시, 공휴일 제외</p>
+            </div>
         </div>
-        <div class="blogo"><a href="#"><img src="./images/mainPage/blogo.png" alt="바텀 로고"></a></div>
-    </footer>
 </body>
 
 </html>

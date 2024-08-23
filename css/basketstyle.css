@@ -92,6 +92,7 @@ h2 {
 #wrap header .logo {
     width: 1440px;height: 198px;
     display: flex;
+    margin-bottom: 35px;
 }
 #wrap header .logo img {
     width: 187px;height: 118px;
@@ -101,7 +102,6 @@ h2 {
     position: relative;
     width: 1440px;
     height: 50px;
-    margin-top: 35px;
     /* border: 1px solid red; */
     display: flex;
     gap: 26px;
