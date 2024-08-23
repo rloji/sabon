@@ -82,7 +82,8 @@ h2 {
     height: 298px;
     background-color: #fff;
     margin: 0 auto;
-    position: relative;
+    position: fixed;
+    top: 50px;
     z-index: 3;
 }
 #wrap header .toggle {
@@ -92,29 +93,24 @@ h2 {
     width: 45px;height: 45px;
     margin-top: 40px;
 }
-#wrap header .logo {
+#wrap header .logo a {
     width: 1440px;height: 198px;
     display: flex;
-    margin-bottom: 35px;
 }
-#wrap header .logo img {
+#wrap header .logo a img {
     width: 187px;height: 118px;
     margin: 45px auto;
 }
 #wrap header nav {
-    position: fixed;
+    position: absolute;
     width: 1440px;
     height: 50px;
     /* border: 1px solid red; */
     display: flex;
     gap: 26px;
-    margin-top: 35px;
     background-color: #fff;
-    top: 248px;
 }
-/* #wrap header nav.menu {
-    position: fixed;
-} */
+
 #wrap header nav.menu h4 {
     padding: 0;
     font-size: 14px;
@@ -198,11 +194,6 @@ h2 {
     display: block;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
 
 #wrap header .mobileMenu {
     display: none;

@@ -12,8 +12,6 @@ $(function(){
         }
     });
 
-    
-
     $(".menu-item").mouseenter(function() {
       // 모든 서브메뉴를 닫음
       $(".submenuImg").stop().slideUp(300);
@@ -50,26 +48,6 @@ $(function(){
               const correspondingImage = images[Array.from(link.parentNode.children).indexOf(link)];
               if (correspondingImage) correspondingImage.classList.add('active');
           });
-      });
-  });
-
-  $(document).ready(function () {
-      $('.tab-tit').click(function () {
-          // 아코디언 기능: 클릭 시 해당 내용을 표시/숨김
-          var content = $(this).next('.cboth_prdInfo_text');
-          content.slideToggle(300);
-
-          // 화살표 회전 기능: 화살표 이미지 회전
-          var arrow = $(this).find('.arrow-icon'); // 새로운 클래스 지정
-          var isRotated = arrow.hasClass('rotated');
-
-          if (isRotated) {
-              arrow.removeClass('rotated');
-              arrow.css('transform', 'rotate(0deg)');
-          } else {
-              arrow.addClass('rotated');
-              arrow.css('transform', 'rotate(180deg)');
-          }
       });
   });
 
