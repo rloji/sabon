@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>상품 상세페이지</title>
+    <link rel="stylesheet" href="./css/detail_style.css">
+    <script src="./script/jquery-1.12.3.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./script/detail_script.js"></script>
+</head>
+<body>
+    <!-- topheader -->
+    <div class="bgTop">
+        <div class="headerTop">
+            <ul>
+                <a href="#">LOGIN <span>/</span></a>
+                <a href="#">JOIN US</a> 
+                <a href="#"><img src="./images/svg/storeIcon.svg" alt="매장안내"><span> 매장안내</span></a>
+                <a href="./basket.html"><img src="./images/svg/cartIcon.svg" alt="장바구니"></a>
+                <a href="#"><img src="./images/svg/serchIcon.svg" alt="검색하기"></a>
+            </ul>
+        </div>
+    </div>
+    <div id="wrap">
+        <header>
+            <div class="toggle"><img src="./images/svg/toggle.svg" alt="mobile menu"></div>
+            <div class="logo"><img src="./images/mainPage/sabon_logo.png" alt="로고"></div>
+            <nav class="menu">
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">배쓰 / 바디케어</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>배쓰 / 바디케어<div class="arrow"></div></h2>
+                                <p><a href="#">바디 스크럽</a></p>
+                                <p><a href="#">샤워 오일</a></p>
+                                <p><a href="#">바디 로션</a></p>
+                                <p><a href="#">입욕제</a></p>
+                                <p><a href="#">솝</a></p>
+                                <p><a href="#">액세서리</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu1.png" alt="배쓰 / 바디케어"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">핸드 / 풋케어</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>핸드 / 풋케어<div class="arrow"></div></h2>
+                                <p><a href="#">핸드크림</a></p>
+                                <p><a href="#">핸드솝</a></p>
+                                <p><a href="#">핸드 스크럽</a></p>
+                                <p><a href="#">풋케어</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu2.png" alt="핸드 / 풋케어"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">헤어 케어</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>헤어 케어<div class="arrow"></div></h2>
+                                <p><a href="#">스크럽</a></p>
+                                <p><a href="#">샴푸</a></p>
+                                <p><a href="#">세럼</a></p>
+                                <p><a href="#">마스크</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu3.png" alt="헤어 케어"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">스킨 케어</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>스킨 케어<div class="arrow"></div></h2>
+                                <p><a href="#">클렌저</a></p>
+                                <p><a href="#">트리트먼트</a></p>
+                                <p><a href="#">페이셜마스크</a></p>
+                                <p><a href="#">립케어</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu4.png" alt="스킨 케어"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">홈 & 향수</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>홈 & 향수<div class="arrow"></div></h2>
+                                <p><a href="#">아로마 디퓨저</a></p>
+                                <p><a href="#">향수</a></p>
+                                <p><a href="#">패브릭미스트</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu5.png" alt="홈 & 향수"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">향 / 컬렉션</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>향 / 컬렉션<div class="arrow"></div></h2>
+                                <div class="subText">
+                                <p><a href="#">자스민</a></p>
+                                <p><a href="#">라벤더애플</a></p>
+                                <p><a href="#">파출리라벤더바닐라</a></p>
+                                <p><a href="#">그린로즈</a></p>
+                                <p><a href="#">로즈티</a></p>
+                                <p><a href="#">머스크</a></p>
+                                <p><a href="#">시트러스 블라썸</a></p>
+                                <p><a href="#">화이트티</a></p>
+                                <p><a href="#">진저오렌지</a></p>
+                                <p><a href="#">사해</a></p>
+                                <p><a href="#">젠틀맨</a></p>
+                                <p><a href="#">화이트로즈</a></p>
+                                <p><a href="#">센서리가든</a></p>
+                                <p><a href="#">파리켈렉션</a></p>
+                                </div>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu6.png" alt="향 / 컬렉션"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">선물 추천</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>선물 추천<div class="arrow"></div></h2>
+                                <p><a href="#">GIFT SETS</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu7.png" alt="선물 추천"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">SALE</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>SALE<div class="arrow"></div></h2>
+                                <p><a href="#">SPECIAL PRICE</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu8.png" alt="SALE"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">ABOUT US</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>ABOUT US<div class="arrow"></div></h2>
+                                <p><a href="#">브랜드 스토리</a></p>
+                                <p><a href="#">SABON 3 Steps</a></p>
+                                <p><a href="#">FALL IN SCRUB</a></p>
+                                <p><a href="#">HOW TO OPEN SCRUB</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu9.png" alt="ABOUT US"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu">
+                    <li class="menu-item">
+                        <h4 class="hoverMenu"><a href="#">멤버십 혜택</a></h4>
+                        <!-- <div class="submenu"> -->
+                            <div class="submenuText">
+                                <h2>멤버십 혜택<div class="arrow"></div></h2>
+                                <p><a href="#">MEMBERSHIP PROGRAM</a></p>
+                            </div>
+                        <!-- </div> -->
+                        <div class="submenuImg"><img src="./images/mainPage/submenu10.png" alt="멤버십 혜택"></div>
+                    </li>
+                </ul>
+                <ul class="mainmenu"><li class="menu-item"><h4><a href="#">이달의 프로모션</a></h4></li></ul>
+                <ul class="mainmenu"><li class="menu-item"><h4><a href="#">기업용 선물 서비스</a></h4></li></ul>
+            </nav>
+            <div class="mobileMenu">
+                <ul>
+                    <li><a href="#"><img src="./images/svg/serchIcon_gray.svg" alt="검색"></a></li>
+                    <li><a href="#"><img src="./images/svg/cartIcon_gray.svg" alt="장바구니"></a></li>
+                </ul>
+            </div>
+        </header>
+
+        <!-- main -->
+        <main>
+            <div class="product">
+                <div class="imgarea">
+                    <img src="./images/subPage/product.png" alt="상품 이미지">
+                </div>
+                <div class="infoarea">
+                    <div class="infoHeader">
+                        <h2>샤워 오일 그린로즈 (바디워시/샤워젤)</h2>
+                        <img src="./images/svg/eco_gray.svg" alt="상품 이미지">
+                    </div>
+                    <p>300ml</p>
+                    <ul>
+                        <li>
+                            <p>판매가</p>
+                            <ul>
+                                <li><strong>39,000원</strong></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>배송비</p>
+                            <ul>
+                                <li>3,000원 (50,000원 이상 구매 시 무료)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="warning">
+                        <img src="./images/svg/warningIcon.svg" alt="경고표시">
+                        <p>수량을 선택해주세요.</p>
+                    </div>
+                    <div class="total">
+                        <ul>
+                            <li>
+                                <p>샤워 오일 그린로즈 (바디워시/샤워젤)</p>
+                            </li>
+                            <li>
+                                <div class="number">
+                                    <img src="./images/svg/minusBtn.svg" alt="감소">
+                                    <span>1</span>
+                                    <img src="./images/svg/plusBth.svg" alt="증가">
+                                </div>
+                                <span>39,000원</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="totalPrice">
+                        <p>총 상품금액</p>
+                        <div class="price">
+                            <strong>39,000원</strong>
+                            <p>(1개)</p>
+                        </div>
+                    </div>
+
+                    <div class="baseBtn">
+                        <div class="innerBtn">
+                            <a href="#"><img src="./images/svg/likeBtn.svg" alt="좋아요 버튼"></a>
+                            <a href="#"><img src="./images/svg/cartBtn.svg" alt="장바구니 버튼"></a>
+                            <a href="#"><img src="./images/svg/shareBtn.svg" alt="공유 버튼"></a>  
+                        </div>
+                        <a href="#">BUY IT NOW</a>
+                    </div>
+                    <div class="naverBtn">
+                        <div class="text">
+                            <img src="./images/svg/naverLogo.svg" alt="네이버페이">
+                            <p>네이버 ID로 간편구매<br>네이버페이</p>
+                        </div>
+                        <div class="nBtn">
+                            <a href="#"><img src="./images/svg/naverpayBtn.svg" alt="네이버페이 구매 버튼"></a>
+                            <a href="#"><img src="./images/svg/likelistBtn.svg" alt="찜 버튼"></a>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <ul>
+                            <li>
+                                <p><strong>머니결제혜택</strong>최대 3%적립 + 소득공제></p>
+                            </li>
+                            <li>
+                                <p><strong>현장결제</strong>결제할 때 마다, 월 50번 포인트 뽑기!</p>
+                            </li>
+                        </ul>
+                        <div class="eventBtn">
+                            <a href="#"><img src="./images/svg/leftArrow_s.svg" alt="이전 버튼"></a>
+                            <a href="#"><img src="./images/svg/rightArrow_s.svg" alt="다음 버튼"></a></div>
+                    </div>
+                </div>
+                <div class="mb_infoarea">
+                    <div class="infoHeader">
+                        <h2>샤워 오일 그린로즈 (바디워시/샤워젤)</h2>
+                        <img src="./images/svg/eco_gray.svg" alt="상품 이미지">
+                    </div>
+                    <p>300ml</p>
+                    <div class="totalPrice">
+                        <strong>39,000원</strong>
+                        <p>(1개)</p>
+                    </div>
+                    <ul>
+                        <li>
+                            <p>판매가</p>
+                            <ul>
+                                <li>39,000원</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>배송비</p>
+                            <ul>
+                                <li>3,000원 (50,000원 이상 구매 시 무료)</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="total">
+                        <ul>
+                            <li>
+                                <p>수량</p>
+                                <div class="number">
+                                    <img src="./images/svg/minusBtn.svg" alt="감소">
+                                    <span>1</span>
+                                    <img src="./images/svg/plusBth.svg" alt="증가">
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="baseBtn">
+                        <div class="innerBtn">
+                            <a href="#"><img src="./images/svg/likeBtn.svg" alt="좋아요 버튼"></a>
+                            <a href="#"><img src="./images/svg/cartBtn.svg" alt="장바구니 버튼"></a>
+                            <a href="#"><img src="./images/svg/shareBtn.svg" alt="공유 버튼"></a>  
+                        </div>
+                        <a href="#">BUY NOW</a>
+                    </div>
+                    <div class="naverBtn">
+                        <div class="text">
+                            <img src="./images/svg/naverLogo.svg" alt="네이버페이">
+                            <p>네이버 ID로 간편구매<br>네이버페이</p>
+                        </div>
+                        <div class="nBtn">
+                            <a href="#"><img src="./images/svg/naverpayBtn.svg" alt="네이버페이 구매 버튼"></a>
+                            <a href="#"><img src="./images/svg/likelistBtn.svg" alt="찜 버튼"></a>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <ul>
+                            <li>
+                                <p><strong>머니결제혜택</strong>최대 3%적립 + 소득공제</p>
+                            </li>
+                            <li>
+                                <p><strong>현장결제</strong>결제할 때 마다, 월 50번 포인트 뽑기!</p>
+                            </li>
+                        </ul>
+                        <div class="eventBtn">
+                            <a href="#"><img src="./images/svg/rightArrow.svg" alt="상세 버튼"></a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div class="bothBtn">
+                <a href="#" class="on">
+                    <p>WHAT IS IT</p>
+                </a>
+                <a href="#">
+                    <p>REVIEWS<span>(0)</span></p>
+                </a>
+            </div>
+
+            <div class="detailInfo">
+                <div class="infoImg">
+                    <img src="./images/subPage/detail1.jpg" alt="제품설명1">
+                    <img src="./images/subPage/detail2.jpg" alt="제품설명2">
+                </div>
+            </div>      
+        </main>
+
+               <!-- product info -->
+               <div class="productInfo">
+                <div class="prdInfo_line_act">
+                    <div class="tab-tit">
+                        <h2>상품 정보/전성분 안내</h2>
+                        <p>본 상품정보는 공정거래위원회의 전자상거래 등에서의 상품정보제공 고시에 따라 작성되었습니다.</p>
+                        <div class="arrow-icon"></div> <!-- 회전할 화살표 -->
+                    </div>
+                    <div class="cboth_prdInfo_text">
+                        <div>
+                            <table class="tab-content">
+                                <tbody>
+                                    <tr>
+                                        <th style="width: 10%;">제품명</th>
+                                        <td style="width: 90%;">샤워오일 그린로즈 300ml</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="width: 10%;">제품 주요 사양</th>
+                                        <td style="width: 90%;">모든 피부 타입</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="width: 10%;">사용기한 또는 개봉 후 사용기간</th>
+                                        <td style="width: 90%;">상품 발송일을 기준으로 유통기한 12개월 이상 남은 상품만을 판매합니다.
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="width: 10%;">제조업자 및 책임판매업자
+                                            <br>
+                                        </th>
+                                        <td style="width: 90%;">그룹로쉐오퍼레이션즈 레스 빌레스 제프 56200/56201 라 가실리 / ㈜비엔에프통상
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="width: 10%;">제조국</th>
+                                        <td style="width: 90%;">프랑스</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="width: 10%;">All Ingredients</th>
+                                        <td style="width: 90%;">정제수, 소듐라우레스설페이트, 글리세린, 데실글루코사이드, 향료(그린로즈향 2.2%),
+                                            라우릴글루코사이드,
+                                            메틸글루세스-20, 코코-글루코사이드, 글리세릴올리에이트, 카프릴릴/카프릴글루코사이드, 코카미도프로필베타인, 시트릭애씨드,
+                                            소듐벤조에이트,
+                                            포타슘솔베이트,
+                                            벤조트라이아졸릴도데실p-크레솔, 트라이소듐에틸렌다이아민다이석시네이트, 아보카도오일, 올리브오일, 호호바씨오일, 밀배아오일, 토코페롤,
+                                            소듐클로라이드,
+                                            하이드로제네이티드식물성글리세라이즈시트레이트, 메틸프로판다이올, 황색4호, 로즈마리잎추출물, 시트랄, 시트로넬올, 제라니올, 헥실신남알,
+                                            리모넨,
+                                            리날룰/
+                                            ※전성분 목록은 변경될 수 있습니다. 최신 정보는 제품에 부착된 국문라벨을 참고하시거나 고객상담실로 연락 주시기 바랍니다.<br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="width: 10%;">사용할 때 주의사항</th>
+                                        <td style="width: 90%;">1. 화장품을 사용하여 다음과 같은 이상이 있는 경우에는 사용을 중지하여야 하며, 계속 사용하면
+                                            증상을
+                                            악화시키므로 피부과 전문의 등에게 상담할 것
+                                            <br>1) 사용중 붉은 반점, 부어오름, 가려움증, 자극등의 이상이 있는경우
+                                            <br>2) 적용부위가 직사광선에 의하여 위와 같은 이상이 있는 경우
+                                            <br>2. 상처가 있는 부위, 습진 및 피부염등의 이상이 있는 부위에는 사용을 하지말 것
+                                            <br>3. 보관 및 취급상의 주의사항
+                                            <br>1) 사용후에는 반드시 마개를 닫아둘 것
+                                            <br>2) 유·소아의 손이 닿지 아니하는 곳에 보관할 것
+                                            <br>3) 고온 내지 저온의 장소 및 직사광선이 닿는 곳에는 보관하지 말 것
+                                            <br>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th style="width: 10%;">품질 보증 기준</th>
+                                        <td style="width: 90%;">공정거래위원회 고시 품목별 소비자분쟁 해결기준</td>
+                                    </tr>
+                                    <tr>
+                                        <th style="width: 10%;">소비자 상담 관련 전화번호</th>
+                                        <td style="width: 90%;">1833-6763</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="prdInfo_line_act">
+                    <div class="tab-tit">
+                        <h2>배송/교환/반품 안내</h2>
+                        <p>변심 반품의 경우 왕복 배송비를 차감한 금액이 환불되며, 제품 및 포장 상태가 재판매 가능하여야 합니다.</p>
+                        <div class="arrow-icon"></div> <!-- 회전할 화살표 -->
+                    </div>
+                    <div class="cboth_prdInfo_text">
+                        <div>
+                            <table class="tab-content">
+                                <tbody>
+                                    <tr>
+                                        <th>배송비</th>
+                                        <td>3,000원</td>
+                                    </tr>
+                                    <tr>
+                                        <th>배송 기간</th>
+                                        <td>3일 ~ 7일</td>
+                                    </tr>
+                                    <tr>
+                                        <th>배송 방법</th>
+                                        <td>택배</td>
+                                    </tr>
+                                    <tr>
+                                        <th>배송 안내</th>
+                                        <td>- 산간벽지나 도서지방은 별도의 추가금액을 지불하셔야 하는 경우가 있습니다.<br>고객님께서 주문하신 상품은 입금 확인후 배송해
+                                            드립니다.
+                                            다만, 상품종류에 따라서 상품의 배송이 다소 지연될 수 있습니다.</td>
+                                    </tr>
+                                    <tr>
+                                        <th>교환 및 반품정보</th>
+                                        <td><b>교환 및 반품 주소</b><br>- [17563] 경기도 안성시 공도읍 진사리 354 스타필드안성 1층
+                                            사봉매장<b><br><br>교환 및
+                                                반품이 가능한 경우</b><br>
+                                            <div>- 단순 변심으로 인한 교환/반품은 상품을 받으신 날부터 7일 이내 신청 가능합니다. (단순 변심의 경우, 배송비 6,000원은
+                                                고객
+                                                부담 / 교환, 환불은 최대 7~10일 정도 소유)</div>
+                                            <div>- 제품 개봉 하시거나 개봉 방지 택을 제거하시는 경우 및 사은품 누락 시 교환/반품이 불가능 합니다. </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+         <!-- footer -->
+         <footer>
+            <div class="foot1">
+                <div class="customerCenter">
+                    <h6>CUSTOMER CENTER</h6>
+                    <p>06524 서울특별시 서초구 강남대로 629 (잠원동) BNF빌딩</p>
+                    <p class="tel">전화번호 : 1833-6763<br>업무 시간 : 평일 오후 1시 30분 ~ 오후 4시, 공휴일 제외</p>
+                    <p>팩스번호 : (02)2077-5670</p>
+                    <p>이메일 : sabon@bnftrading.co.kr</p>
+                    <a href="#" class="instagramIcon"><img src="./images/svg/instargramBtn.svg" alt="인스타그램 바로가기"></a>
+                </div>
+                <div class="links">
+                    <h6>LINKS</h6>
+                    <p><a href="#">이용약관</a></p>
+                    <p><a href="#">개인정보 취급방침</a></p>
+                    <p><a href="#">이용안내</a></p>
+                </div>
+                <div class="account">
+                    <h6>ACCOUNT</h6>
+                    <p><a href="#">로그인 / 회원가입</a></p>
+                    <p><a href="#">아이디/비밀번호 찾기</a></p>
+                </div>
+                <div class="product">
+                    <h6>PRODUCT</h6>
+                    <div class="pro">
+                        <p><a href="#">배쓰 / 바디케어</a></p><!--  -->
+                        <p><a href="#">핸드 / 풋케어</a></p>
+                        <p><a href="#">헤어 케어</a></p>
+                        <p><a href="#">스킨 케어</a></p>
+                        <p><a href="#">향 / 컬렉션</a></p>
+                        <p><a href="#">선물 추천</a></p>
+                        <p><a href="#">ABOUT US</a></p>
+                        <p><a href="#">MEMBERSHIP PROGRAM</a></p>
+                        <p><a href="#">이달의 프로모션</a></p>
+                        <p><a href="#">기업용 선물 서비스</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="foot2">
+                <br>
+                <span>(주)비엔에프통상</span>
+                <div></div><span>06524 서울특별시 서초구 강남대로 629 (잠원동) BNF빌딩</span><br>
+                <span>개인정보관리책임자 : 방소윤</span>
+                <div></div><span>사업자 등록번호 114-81-66275 [사업자정보확인]</span>
+                <div></div><span>통신판매업 신고번호 제 2014-서울서초-0604 호</span>
+                <div></div><span>대표자 : 조재성, 이효욱, 윤인권</span>
+            </div>
+            <div class="blogo"><a href="#"><img src="./images/mainPage/blogo.png" alt="바텀 로고"></a></div>
+        </footer>
+        <div id="mb_wrap">
+            <div class="mb_footer">
+                <div class="footerBg"></div>
+                <div class="firstFoot"><a href="#">이용약관</a><div></div><a href="#">개인정보 처리방침</a><div></div><a href="#">이용안내</a><div></div><a href="#">PC화면</a></div>
+                <a href="#" class="blogo"><img src="./images/mainPage(mobile)/blogo.png" alt="바텀 로고"></a>
+                <p>COMPANY INFO</p>
+                <p>(주)비엔에프통상 대표자 : 조재성, 이효욱, 윤인권<br>개인정보책임관리자 : <a href="#">방소윤(sabon@bnftrading.co.kr)</a><br>주소 : 06524 서울특별시 서초구 강남대로 629 (잠원동) BNF빌딩<br>사업자등록번호 : 114-81-66275 <a href="#">[사업자정보확인]</a><br>통신판매업신고 : 제 2014-서울서초-0604 호</p>
+                <p>CUSTOMER CENTER</p>
+                <h3>1833-6763</h3>
+                <p>업무 시간 : 평일 오후 1시 30분 ~ 오후 4시, 공휴일 제외</p>
+            </div>
+        </div>
+</body>
+</html>

@@ -2,7 +2,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Hahmlet:wght@100..900&family=Noto+Sans+KR:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Exo:ital,wght@0,100..900;1,100..900&family=Hahmlet:wght@100..900&family=Noto+Sans+KR:wght@100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
 * {margin: 0; padding: 0;
 }
 li {
@@ -26,10 +25,6 @@ h1 {
 h2 {
     color: #65492d;
 }
-.bgTop:nth-of-type(2)
-#mb_wrap {
-    display: none;
-}
 
 /* headerTop */
 .bgTop {
@@ -48,9 +43,6 @@ h2 {
     line-height: 50px;
     z-index: 99;
 }
-.bgTop .mb_headerTop {
-    display: none;
-}
 .headerTop ul {
     position: absolute;
     right: 0;
@@ -62,7 +54,6 @@ h2 {
     font-size: 14px;
     color: #999593;
     padding-left: 5px;
-    display: inline-block;
 }
 .headerTop ul a span {
     padding-left: 5px;
@@ -115,7 +106,6 @@ h2 {
     /* border: 2px solid blue; */
     display: flex;
     /* justify-content: space-around; */
-    overflow: visible;
 }
 #wrap header nav ul.mainmenu li.menu-item {
     /* width: 100%; */
@@ -139,22 +129,20 @@ h2 {
     letter-spacing: -0.2px;
     text-align: center;
 }
-#wrap header nav ul.mainmenu li.menu-item h4 a:hover,
-#wrap header nav ul.mainmenu li.menu-item .submenuText a:hover {
-    color: #371b0f;
-    font-weight: bold;
-}
+/* #wrap header nav ul.mainmenu li.menu-item h4 a {
+    
+} */
 #wrap header nav ul.mainmenu li.menu-item .submenuText {
     position: absolute;
     top: 100px;
     left: 113px;
     display: none;
-    letter-spacing: -0.7px;
     /* background: #f0e7de; */
     z-index: 60;
 }
 #wrap header nav ul.mainmenu li.menu-item .submenuText .subText {
     columns: 2;
+    
 }
 #wrap header nav ul.mainmenu li.menu-item .submenuText h2 {
     font-size: 24px;
@@ -164,7 +152,6 @@ h2 {
     margin-bottom: 25px;
 }
 #wrap header nav ul.mainmenu li.menu-item .submenuText p {
-    font-size: 14px;
     margin-bottom: 5px;
 }
 
@@ -172,22 +159,20 @@ h2 {
     position: absolute;
     width: 10000px;
     height: 373px;
-    top: 50px;
+    top: 49px;
     left: 0;
-    margin: 0 auto;
+    /* margin: 0 auto; */
     background: #f0e7de;
     z-index: 50;
     display: none;
-    /* overflow: visible; */
 }
 #wrap header nav ul.mainmenu .submenuImg img {
-    position: relative;
+    /* position: absolute; */
     top: 0;
-    /* left: -250px; */
-    right: 266px;
-    width: 1920px;
+    left: 0;
+    width: 1440px;
     height: 373px;
-    display: none;
+    /* display: none; */
 }
 #wrap header nav ul.mainmenu li.menu-item:hover .submenuImg img.active {
     display: block;
@@ -201,7 +186,7 @@ h2 {
     position: absolute;
     width: 100%;
     height: 560px;
-    top: 253px;
+    top: 252px;
     /* border: 3px solid red; */
 }
 #wrap .slide .slideList {
@@ -211,17 +196,13 @@ h2 {
     top: 250px;
     left: 0;
     /* border: 6px solid blue; */
-    transition: transform 0.5s ease-in-out;
 }
 #wrap .slide .slideList .slideImg {
     position: absolute;
-    opacity: 0;
-    /* display: none; */
-    transition: opacity 0.5s ease;
+    display: none;
 }
-#wrap .slide .slideList .slideImg.active {
-    /* display: block; */
-    opacity: 1;
+#wrap .slide .slideList .slideImg:first-child {
+    display: block;
 }
 #wrap .slide .slideList .slideImg img {
     position: absolute;
@@ -229,24 +210,24 @@ h2 {
     left: 0;
     object-fit: cover;
 }
-#wrap .slide .buttons {
+#wrap .slide .button {
     position: relative;
     width: 100%;
     height: 30px;
     bottom: 0;
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
-#wrap .slide .buttons .button {
+#wrap .slide .button div {
     position: relative;
     width: 10px;
     height: 10px;
     margin: 20px 5px;
     background: #ccc;
     border-radius: 50%;
-    cursor: pointer;
 }
-#wrap .slide .buttons .button.active {
+#wrap .slide .button div.active {
     background: #54301A;
 }
 
@@ -254,16 +235,16 @@ h2 {
 #wrap .section1 {
     position: relative;
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
-    overflow: hidden;
+    height: 681px;
+    /* border: 1px solid red; */
     text-align: center;
+    margin-top: 20px;
 }
 #wrap .section1 h1 {
     position: relative;
     /* background: orange; */
     font-size: 48px;
-    margin-top: 325px;
+    margin-top: 300px;
 }
 #wrap .section1 .titleBar {
     position: relative;
@@ -274,97 +255,64 @@ h2 {
     margin-top: 20px;
 }
 #wrap .section1 .sec1 {
-    position: relative;
+    position: absolute;
     width: 100%;
-    max-width: 1440px;
-    margin: 0 auto;
+    height: 432px;
+    /* border: 3px solid blue; */
+    margin-top: 50px;
     overflow: hidden;
 }
 #wrap .section1 .sec1 .btnPrev {
     position: absolute;
     left: 0;
     line-height: 432px;
-    cursor: pointer;
-    z-index: 50;
 }
 #wrap .section1 .sec1 .btnNext {
     position: absolute;
     right: 0;
     line-height: 432px;
-    cursor: pointer;
-    z-index: 50;
 }
 #wrap .section1 .sec1 .sec1_slide {
+    width: 150%;
+    /* div 6개를 수용할만큼 부모의 사이즈가 커야 overflow:hidden이 적용됨 */
+    height: 100%;
     display: flex;
-    overflow: hidden;
 }
-#wrap .section1 .sec1 .sec1_slide>div {
-    flex: 0 0 25%; /* 4개의 슬라이드가 한 번에 보이도록 설정 */
-    box-sizing: border-box;
-    width: 360px;
+#wrap .section1 .sec1 .sec1_slide div {
+    position: relative;
+    margin: 0 auto;
+    width: 25%;
     height: 430px;
-    margin: 50px 0;
-    text-align: center;
     border-bottom: 2px solid #E1E1E1;
     transition: border 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+}
+#wrap .section1 .sec1 .sec1_slide div:hover {
+    border-bottom: 2px solid #54301a;
 }
 #wrap .section1 .sec1 .sec1_slide div a img {
     width: 250px;
     height: 250px;
-    display: block;
-    /* top: 10px; */
     opacity: 1;
-    transition: 0.3s ease;
+    transition: opacity 0.3s ease;
 }
-#wrap .section1 .sec1 .sec1_slide div .slick-text {
-    width: 360px;
-    height: 180px;
-    border: none;
-}
-#wrap .section1 .sec1 .sec1_slide .slick-text .productName {
-    font-size: 17px;
-    font-weight: 500;
-    margin-top: 10px;
-    letter-spacing: -0.7px;
-}
-#wrap .section1 .sec1 .sec1_slide .slick-text .volume {
-    font-size: 14px;
-    font-weight: 500;
-    color: #666;
-    /* border: 1px solid blue; */
-}
-#wrap .section1 .sec1 .sec1_slide .slick-text .price {
-    font-size: 12px;
-    color: #714633;
-    margin: 25px 0 50px 0;
-    /* border: 1px solid green; */
-}
-/* #wrap .section1 .sec1 .btnNext slick-track {
-    display: flex;
-} */
-/* #wrap .section1 .sec1 .sec1_slide div {
-    position: relative;
-    margin: 0 auto;
-    width: 25% !important;
-    height: 430px;
-    border-bottom: 2px solid #E1E1E1;
-    transition: border 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
-
-#wrap .section1 .sec1 .sec1_slide>div:hover {
-    border-bottom: 2px solid #54301a;
-}
-#wrap .section1 .sec1 .sec1_slide>div:hover img {
+#wrap .section1 .sec1 .sec1_slide div a img:hover {
     opacity: 0.8;
-    transition: 0.3s ease;
+}
+#wrap .section1 .sec1 .sec1_slide div span {
+    /* position: relative; */
+    display: block;
+}
+#wrap .section1 .sec1 .sec1_slide div span.productName {
+    margin-top: 20px;
+    color: #000;
+    font-weight: bold;
+}
+#wrap .section1 .sec1 .sec1_slide div span.volume {
+    color: #585858;
+}
+#wrap .section1 .sec1 .sec1_slide div span.price {
+    color: #714633;
+    margin-top: 25px;
 }
 
 /* section2 */
@@ -372,10 +320,9 @@ h2 {
     width: 100%;
     height: 909px;
     text-align: center;
-    margin-top: 60px;
 }
 #wrap .section2 h1 {
-    font-size: 48px;
+    font-style: 48px;
 }
 #wrap .section2 .titleBar {
     position: relative;
@@ -607,167 +554,4 @@ footer .blogo {
     height: 70px;
     margin: 5px auto;
     text-align: center;
-}
-
-/* ---------- mobile ---------- */
-@media (max-width: 768px) {
-    .bgTop {
-        display: block !important;
-        position: relative;
-        height: 125px;
-        background: #fff;
-        align-items: center;
-    }
-    body:first-child,
-    #wrap,
-    footer {
-        display: none;
-    }
-    .bgTop .mb_headerTop {
-        width: 100%;
-        height: 100%;
-        display: block;
-        text-align: center;
-    }
-    .bgTop .mb_headerTop .toggle {
-        position: absolute;
-        width: 45px;
-        height: 34px;
-        top: 42px;
-        left: 45px;
-    }
-    .bgTop .mb_headerTop .toggle img {
-        width: 45px;
-        height: 34px;
-    }
-    .bgTop .mb_headerTop .mb_logo img {
-        position: relative;
-        width: 126px;
-        height: 79px;
-        top: 23px;
-    }
-    .bgTop .mb_headerTop .mb_search img {
-        position: absolute;
-        width: 45px;
-        height: 43px;
-        top: 39px;
-        right: 112px;
-    }
-    .bgTop .mb_headerTop .mb_basket img {
-        position: absolute;
-        width: 45px;
-        height: 54px;
-        top: 29px;
-        right: 48px;
-    }
-    .mb_slideList {
-        position: relative;
-        display: block;
-        width: 100%;
-        top: -50px;
-    }
-    .mb_slideList .mb_slide {
-        /* display: none; */
-        display: block;
-        width: 100%;
-        /* margin: auto; */
-    }
-    .mb_slideList .mb_slide a img {
-        width: 100vw;
-        top: 0;
-    }
-    .mb_slideList .mb_slide .fade {
-        animation-name: fadeEffect;
-        animation-duration: 1.5s;
-    }
-    .mb_slideList .buttons {
-        display: block;
-        position: absolute;
-        /* top: 100px; */
-        z-index: 800;
-    }
-    .buttons .button {
-        position: relative;
-        display: block;
-    }
-    @keyframes fadeEffect {
-        from {opacity: 0.4;}
-        to {opacity: 1;}
-    }
-    .mb_footer {
-        position: relative;
-        width: 768px;
-        height: 821px;
-        /* display: flex; */
-        /* flex-wrap: wrap; */
-        text-align: center;
-        justify-content: space-around;
-        overflow: visible;
-        color: #bdbcbb;
-    }
-    .mb_footer .footerBg {
-        position: absolute;
-        width: 10000px;
-        height: 821px;
-        background: #27201b;
-        /* background: #ddd; */
-        z-index: -1;
-    }
-    .mb_footer .firstFoot {
-        /* position: relative; */
-        width: 768px;
-        height: 80px;
-        line-height: 80px;
-        display: flex;
-        background: #201a16;
-        align-items: center;
-    }
-    .mb_footer .firstFoot a {
-        font-size: 20px;
-        font-weight: 600;
-        letter-spacing: -1px;
-        margin: 0 auto;
-        color: #fff;
-    }
-    .mb_footer .firstFoot div {
-        width: 2px;
-        height: 15px;
-        background: #7d7d7d;
-    }
-    .mb_footer a img {
-        width: 158px;
-        height: 98px;
-    }
-    .mb_footer>a {
-        position: relative;
-        top: 40px;
-    }
-    .mb_footer p:first-of-type {
-        font-size: 35px;
-        font-weight: 500;
-        letter-spacing: -1px;
-        margin-top: 60px;
-    }
-    .mb_footer>p:nth-child(5) {
-        font-size: 24px;
-        letter-spacing: -1px;
-        margin-top: 10px;
-    }
-    .mb_footer>p:nth-child(5) a {
-        color: #bdbcbb;
-    }
-    .mb_footer>p:nth-child(6) {
-        font-size: 35px;
-        letter-spacing: -1px;
-        margin-top: 50px;
-    }
-    .mb_footer h3 {
-        font-size: 60px;
-        letter-spacing: -1px;
-        margin-top: -10px;
-    }
-    .mb_footer>p:nth-child(8) {
-        font-size: 24px;
-        color: #666;
-    }
 }
