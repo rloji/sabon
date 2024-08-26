@@ -85,7 +85,7 @@ h2 {
     margin: 0 auto;
     position: fixed;
     top: 50px;
-    z-index: 3;
+    z-index: 798;
 }
 #wrap header .toggle {
     display: none;
@@ -202,11 +202,6 @@ h2 {
     display: block;
 }
 
-.sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-}
 
 #wrap header .mobileMenu {
     display: none;
@@ -1055,7 +1050,7 @@ footer .blogo {
 
     #wrap main {
         position: absolute;
-        top: -900px;
+        /* top: 0; */
     }
     #wrap main .product {
         width: 672px;
@@ -1188,16 +1183,92 @@ footer .blogo {
         top: 5000px;
         display: block;
     }
+    #wrap .productInfo {
+        padding-top: 80px;
+        margin-bottom: 50px;
+        margin-left: 20px;
+    }
 
     #wrap .prdInfo_line_act {
         position: relative;
-        top: 8300px;
+        top: 9050px;
     }
+    #wrap .prdInfo_line_act {
+        padding-bottom: 25px;
+        z-index: 999;
+    }
+
+    #wrap .prdInfo_line_act .tab-tit {
+        padding-bottom: 10px;
+        position: relative;
+    }
+
+    #wrap .prdInfo_line_act .tab-tit h2 {
+        font-size: 20px;
+        width: 100%;
+        color: #010101;
+        margin-bottom: 5px;
+    }
+
+    #wrap .prdInfo_line_act .tab-tit p {
+        display: none;
+    }
+
+    .tab-tit .arrow-icon {
+        width: 18px;
+        height: 9px;
+        background: url('../images/subPage/tab_arrow.png') center no-repeat;
+        position: absolute;
+        transition: transform 0.3s ease;
+        transform: rotate(0deg);
+        left: 200px;
+    }
+
+    .tab-tit .arrow-icon.rotated {
+        transform: rotate(180deg);
+    }
+
+    #wrap .prdInfo_line_act .cboth_prdInfo_text {
+        padding: 15px 0;
+    }
+
+    #wrap .prdInfo_line_act .cboth_prdInfo_text>div {
+        margin-left: -80px;
+    }
+
+    .tab-content th,
+    .tab-content td {
+        font-size: 12px;
+        padding: 10px 0;
+        display: block;
+        width: 100%;
+        border-bottom: 1px solid #eee;
+    }
+
+    .tab-content th {
+        font-weight: 700;
+        color: #333;
+        padding-top: 15px;
+    }
+
+    .tab-content td {
+        color: #717171;
+        padding-bottom: 15px;
+    }
+
+
+
+
+
+
+
+
+
     .mb_footer {
         position: absolute;
         width: 768px;
         height: 821px;
-        top: 4500px;
+        top: 4310px;
         /* display: flex; */
         /* flex-wrap: wrap; */
         text-align: center;

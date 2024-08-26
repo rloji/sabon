@@ -114,6 +114,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const overlay = document.querySelector('.overlay');
     const accordionItems = document.querySelectorAll('.accordion dt');
 
+
     // 메뉴 열기
     toggleButton.addEventListener('click', function (e) {
         e.preventDefault();
