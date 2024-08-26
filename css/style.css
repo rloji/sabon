@@ -19,10 +19,10 @@ body {
     overflow-x: hidden;
     /* overflow-y: hidden; */
 }
-h1, h2 {
+h5, h2 {
     font-family: 'Playfair Display';
 }
-h1 {
+h5 {
     color: #412d19;
 }
 h2 {
@@ -98,6 +98,7 @@ h2 {
     position: relative;
     top: 3px;
     padding-left: 5px;
+    width: 17px;height: 17px;
 }
 
 #wrap {
@@ -298,7 +299,7 @@ h2 {
     /* overflow: hidden; */
     text-align: center;
 }
-#wrap .section1 h1 {
+#wrap .section1 h5 {
     position: relative;
     /* background: orange; */
     font-size: 48px;
@@ -318,7 +319,7 @@ h2 {
     /* height: auto; */
     /* max-width: 1440px; */
     margin: 0 auto;
-    display: block;
+    /* display: block; */
     overflow: hidden;
 }
 #wrap .section1 .sec1 .btnPrev {
@@ -327,6 +328,7 @@ h2 {
     line-height: 432px;
     cursor: pointer;
     z-index: 50;
+    width: 30px;height: 30px;
 }
 #wrap .section1 .sec1 .btnNext {
     position: absolute;
@@ -334,13 +336,14 @@ h2 {
     line-height: 432px;
     cursor: pointer;
     z-index: 50;
+    width: 30px;height: 30px;
 }
 #wrap .section1 .sec1 .sec1_slide {
     position: relative;
     width: 1440px;
     /* height: 432px; */
-    /* display: flex; */
-    /* overflow: hidden; */
+    display: flex;
+    overflow: hidden;
     flex: 0 0 100%;
 }
 #wrap .section1 .sec1 .sec1_slide .slide-item {
@@ -351,7 +354,8 @@ h2 {
     margin: 50px 0;
     border-bottom: 2px solid #E1E1E1;
     transition: border 0.3s ease;
-    display: flex;
+    /* display: flex; */
+    /* display: block; */
     text-align: center;
     flex-direction: column;
     justify-content: center;
@@ -414,7 +418,7 @@ h2 {
 }
 
 /* section2 */
-#wrap .section2 h1 {
+#wrap .section2 h5 {
     font-size: 48px;
     margin-top: 75px;
     text-align: center;
@@ -525,6 +529,9 @@ h2 {
     position: absolute;
     bottom: 0;
 }
+#wrap .section4 article h2 {
+    display: none;
+}
 #wrap .section4 article img {
     width: 100%;
     height: 100%;
@@ -544,7 +551,7 @@ h2 {
     left: 25px;
     /* margin-top: 250px; */
 }
-#wrap .section4 aside .asideText h1 {
+#wrap .section4 aside .asideText h5 {
     font-size: 60px;
     font-weight: bold;
     font-style: italic;
@@ -575,7 +582,7 @@ h2 {
     position: relative;
     margin-bottom: 45px;
 }
-#wrap .section5 h1 {
+#wrap .section5 h5 {
     padding-top: 125px;
     font-size: 48px;
     /* font-weight: 700; */ /* 원래 700이었네 */
@@ -605,6 +612,9 @@ h2 {
     margin: 50px 0 26px 0;
     display: flex;
     justify-content: space-between;
+}
+#wrap .section5 .instagram2 img {
+    width: 100%;
 }
 
 /* footer */
@@ -642,6 +652,7 @@ footer .foot1 h6 {
 }
 footer .foot1 .instagramIcon img {
     padding-top: 5px;
+    width: 22px;height: 22px;
 }
 footer .foot1 .customerCenter ,
 footer .foot1 .links ,
@@ -713,7 +724,6 @@ footer .blogo {
     }
     .mb_bgTop .mb_headerTop .toggle img {
         width: 45px;
-        height: 34px;
     }
     .mb_bgTop .mb_headerTop .mb_logo img {
         position: relative;
@@ -723,16 +733,16 @@ footer .blogo {
     }
     .mb_bgTop .mb_headerTop .mb_search img {
         position: absolute;
-        width: 45px;
-        height: 43px;
-        top: 39px;
+        width: 54px;
+        height: 54px;
+        top: 35px;
         right: 112px;
     }
     .mb_bgTop .mb_headerTop .mb_basket img {
         position: absolute;
-        width: 45px;
+        width: 54px;
         height: 54px;
-        top: 29px;
+        top: 32px;
         right: 48px;
     }
 
@@ -989,7 +999,7 @@ footer .blogo {
         overflow: hidden;
         /* border: 1px solid red; */
     }
-    #mb_wrap .mb_section1 h1 {
+    #mb_wrap .mb_section1 h5 {
         position: relative;
         font-size: 51px;
         margin-top: 50px;
@@ -1118,7 +1128,7 @@ footer .blogo {
         font-family: 'Playfair Display';
         letter-spacing: 0;
     }
-    #mb_wrap h1 {
+    #mb_wrap h5 {
         font-size: 45px;
         letter-spacing: -1px;
         color: #4a4a4a;
@@ -1128,7 +1138,7 @@ footer .blogo {
         letter-spacing: -1px;
         margin: 10px 0 200px 0;
     }
-    #mb_wrap .mb_instagram h1 {
+    #mb_wrap .mb_instagram h5 {
         font-size: 51px;
         letter-spacing: -1px;
     }

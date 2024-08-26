@@ -7,18 +7,18 @@
     <title> 2조 - SABON </title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
     <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css"/> -->
     <script src="./script/jquery-1.12.3.js"></script>
     <script src="./script/script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <!-- slick.js -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script> -->
     <script>
         new WOW().init();
     </script>
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
 </head>
 
 <body>
@@ -26,11 +26,13 @@
     <div class="bgTop">
         <div class="headerTop">
             <ul>
-                <a href="#">LOGIN <span>/</span></a>
-                <a href="#">JOIN US</a>
-                <a href="#"><img src="./images/mainPage/headerTop_icon1.png" alt="매장안내"><span> 매장안내</span></a>
-                <a href="#"><img src="./images/mainPage/headerTop_icon2.png" alt="장바구니"></a>
-                <a href="#"><img src="./images/mainPage/headerTop_icon3.png" alt="검색하기"></a>
+                <li>
+                    <a href="#">LOGIN <span>/</span></a>
+                    <a href="#">JOIN US</a>
+                    <a href="#"><img src="./images/svg/storeIcon.svg" alt="매장안내"><span> 매장안내</span></a>
+                    <a href="#"><img src="./images/svg/cartIcon.svg" alt="장바구니"></a>
+                    <a href="#"><img src="./images/svg/serchIcon.svg" alt="검색하기"></a>
+                </li>
             </ul>
         </div>
     </div>
@@ -204,7 +206,7 @@
                 </ul>
             </nav>
         </header>
-        <!-- ---------- slide ---------- -->
+        <!-- slide-->
         <div class="slide">
             <div class="slideList">
                 <div class="slideImg active"><a href="#"><img src="./images/mainPage/slide1.jpeg"
@@ -226,14 +228,14 @@
                 <div class="button"></div>
             </div>
         </div>
-        <!-- ---------- section1 ---------- -->
+        <!--  section1 -->
         <div class="section1">
-            <h1>BEST SELLER</h1>
+            <h5>BEST SELLER</h5>
             <div class="titleBar"></div>
             <div class="sec1">
                 <!-- slick-slider -->
-                <span class="btnPrev"><img src="./images/mainPage/prev-icon.png" alt="이전 화살표"></span>
-                <span class="btnNext"><img src="./images/mainPage/next-icon.png" alt="다음 화살표"></span>
+                <span class="btnPrev"><img src="./images/svg/leftArrow.svg" alt="이전 화살표"></span>
+                <span class="btnNext"><img src="./images/svg/rightArrow.svg" alt="다음 화살표"></span>
                 <div class="sec1_slide">
                     <!-- slide-item -->
                     <div class="slide-item">
@@ -292,9 +294,9 @@
                 </div>
             </div>
         </div>
-        <!-- ---------- section2 ---------- -->
+        <!-- section2 -->
         <div class="section2 wow animate__animated animate__fadeInUp">
-            <h1>PROMOTION</h1>
+            <h5>PROMOTION</h5>
             <div class="titleBar"></div>
             <div class="sec2">
                 <div class="sec2_contents"><a href="#"><img src="./images/mainPage/promotion1.svg"
@@ -317,7 +319,7 @@
                 </div>
             </div>
         </div>
-        <!-- ---------- section3 ---------- -->
+        <!--  section3  -->
         <div class="section3">
             <div class="sec3">
                 <div><a href="#"><img src="./images/mainPage/sec1_slide1.jpg" alt="아로마 디퓨저 써니칵테일 245ml 98,000원"></a>
@@ -353,21 +355,23 @@
                         class="price">40,000원</span></div>
             </div>
         </div>
-        <!-- ---------- section4 ---------- -->
+        <!-- section4  -->
         <div class="section4">
-            <article><img src="./images/mainPage/welcomeToSABON.jpg" alt="Welcome to SABON"></article>
+            <article>
+                <h2>sec4</h2>
+                <img src="./images/mainPage/welcomeToSABON.jpg" alt="Welcome to SABON"></article>
             <aside class="wow animate__animated animate__slideInRight" style="animation-duration: 1.5s;">
                 <div class="asideText">
-                    <h1>Welcome to SABON</h1>
+                    <h5>Welcome to SABON</h5>
                     <h2>The home that enlivens heart<br>and senses.</h2>
                     <div class="titleBar"></div>
                     <p>사봉과 함께 일상의 소중한 순간들을 향기롭게 채워가는 행복을 경험하세요.</p>
                 </div>
             </aside>
         </div>
-        <!-- ---------- section5 ---------- -->
+        <!--  section5-->
         <div class="section5">
-            <h1>INSTAGRAM</h1>
+            <h5>INSTAGRAM</h5>
             <div class="titleBar"></div>
             <p class="instaText1">I WELCOME TO SABON, THE HOME THAT ENLIVENS HEART AND SENSES <span>#SABON</span></p>
             <p class="instaText2">@sabonkorea_official</p>
@@ -377,10 +381,10 @@
                 <div><img src="./images/mainPage/instagramImg3.jpeg" alt="instagramImg3"></div>
                 <div><img src="./images/mainPage/instagramImg4.jpeg" alt="instagramImg4"></div>
             </div>
-            <div class="instagram2"><img src="./images/mainPage/instagramImg5.svg" alt="instagramImg5"></div>
+            <div class="instagram2"><img src="./images/mainPage/instagramImg5.png" alt="instagramImg5"></div>
         </div>
     </div>
-    <!-- ---------- footer ---------- -->
+    <!--  footer -->
     <footer>
         <div class="foot1">
             <div class="customerCenter">
@@ -389,7 +393,7 @@
                 <p class="tel">전화번호 : 1833-6763<br>업무 시간 : 평일 오후 1시 30분 ~ 오후 4시, 공휴일 제외</p>
                 <p>팩스번호 : (02)2077-5670</p>
                 <p>이메일 : sabon@bnftrading.co.kr</p>
-                <a href="#" class="instagramIcon"><img src="./images/mainPage/side_instagram.png" alt="인스타그램 바로가기"></a>
+                <a href="#" class="instagramIcon"><img src="./images/svg/instargramBtn.svg" alt="인스타그램 바로가기"></a>
             </div>
             <div class="links">
                 <h6>LINKS</h6>
@@ -429,14 +433,14 @@
         </div>
         <div class="blogo"><a href="#"><img src="./images/mainPage(mobile)/blogo.png" alt="바텀 로고"></a></div>
     </footer>
-    <!-- ---------- 모바일 ---------- -->
+    <!--  모바일 -->
     <div class="top"><a href="#">TOP</a></div>
     <div class="mb_bgTop">
         <div class="mb_headerTop">
-            <a href="#" class="toggle"><img src="./images/mainPage(mobile)/icon_allcate.png" alt="토글메뉴"></a>
-            <a href="#" class="mb_logo"><img src="./images/mainPage(mobile)/sabon_logo.png" alt="로고"></a>
-            <a href="#" class="mb_search"><img src="./images/mainPage(mobile)/sear-btn.png" alt="검색하기"></a>
-            <a href="#" class="mb_basket"><img src="./images/mainPage(mobile)/icon_cart_m.png" alt="장바구니"></a>
+            <a href="#" class="toggle"><img src="./images/svg/toggle.svg" alt="토글메뉴"></a>
+            <a href="#" class="mb_logo"><img src="./images/mainPage/sabon_logo.png" alt="로고"></a>
+            <a href="#" class="mb_search"><img src="./images/svg/serchIcon_gray.svg" alt="검색하기"></a>
+            <a href="#" class="mb_basket"><img src="./images/svg/cartIcon_gray.svg" alt="장바구니"></a>
         </div>
     </div>
     <div class="overlay"></div>
@@ -444,16 +448,16 @@
         <div class="menu-header">
             <span class="hi">안녕하세요,</span><a href="#" class="close"><img src="./images/mainPage(mobile)/icon_close_m.png" alt="모바일메뉴 닫기"></a>
             <p>로그인해주세요!</p>
-            <span class="login"><a href="#">LOGIN</a><div></div><a href="#">JOIN US</a></span>
+            <span class="login"><a href="#">LOGIN</a><span><img src="./images/mainPage(mobile)/Vertical_Divider.svg" alt="로그인과 회원가입"></span><a href="#">JOIN US</a></span>
         </div>
         <div class="menu-head">
-            <div><a href="#"><img src="./images/mainPage(mobile)/burger_icon_mypage.png" alt="마이페이지">MY PAGE</a></div>
-            <div><a href="#"><img src="./images/mainPage(mobile)/burger_icon_cart.png" alt="장바구니">CART</a></div>
-            <div><a href="#"><img src="./images/mainPage(mobile)/burger_icon_order.png" alt="주문 내역">ORDER</a></div>
-            <div><a href="#"><img src="./images/mainPage(mobile)/burger_icon_shop.png" alt="매장 검색">SHOP</a></div>
+            <div><a href="#"><img src="./images/svg/overlay_mypage.svg" alt="마이페이지">MY PAGE</a></div>
+            <div><a href="#"><img src="./images/svg/overlay_cart.svg" alt="장바구니">CART</a></div>
+            <div><a href="#"><img src="./images/svg/overlay_order.svg" alt="주문 내역">ORDER</a></div>
+            <div><a href="#"><img src="./images/svg/overlay_shop.svg" alt="매장 검색">SHOP</a></div>
         </div>
         <dl class="accordion">
-            <dt><span>배쓰 / 바디케어<img src="./images/mainPage(mobile)/icon_dropdown_m.png" alt="토글 화살표"></span></dt>
+            <dt><span>배쓰 / 바디케어<img src="./images/svg/bottomArrow.svg" alt="토글 화살표"></span></dt>
             <dd>
                 <a href="#">전체</a>
                 <a href="#">바디 스크럽</a>
@@ -463,14 +467,14 @@
                 <a href="#">솝</a>
                 <a href="#">액세서리</a>
             </dd>
-            <dt><span>핸드 / 풋케어<img src="./images/mainPage(mobile)/icon_dropdown_m.png" alt="토글 화살표"></span></dt>
+            <dt><span>핸드 / 풋케어<img src="./images/svg/bottomArrow.svg" alt="토글 화살표"></span></dt>
             <dd>
                 <a href="#">전체</a>
                 <a href="#">핸드 / 풋 스크럽</a>
                 <a href="#">핸드솝</a>
                 <a href="#">핸드 / 풋 크림</a>
             </dd>
-            <dt><span>헤어 케어<img src="./images/mainPage(mobile)/icon_dropdown_m.png" alt="토글 화살표"></span></dt>
+            <dt><span>헤어 케어<img src="./images/svg/bottomArrow.svg" alt="토글 화살표"></span></dt>
             <dd>
                 <a href="#">전체</a>
                 <a href="#">헤어 스크럽</a>
@@ -478,14 +482,14 @@
                 <a href="#">세럼</a>
                 <a href="#">트리트먼트</a>
             </dd>
-            <dt><span>스킨 케어<img src="./images/mainPage(mobile)/icon_dropdown_m.png" alt="토글 화살표"></span></dt>
+            <dt><span>스킨 케어<img src="./images/svg/bottomArrow.svg" alt="토글 화살표"></span></dt>
             <dd>
                 <a href="#">전체</a>
                 <a href="#">스크럽 / 클렌저</a>
                 <a href="#">트리트먼트</a>
                 <a href="#">립케어</a>
             </dd>
-            <dt><span>향 / 컬렉션<img src="./images/mainPage(mobile)/icon_dropdown_m.png" alt="토글 화살표"></span></dt>
+            <dt><span>향 / 컬렉션<img src="./images/svg/bottomArrow.svg" alt="토글 화살표"></span></dt>
             <dd>
                 <a href="#">자스민</a>
                 <a href="#">라벤더애플</a>
@@ -502,31 +506,32 @@
                 <a href="#">파리컬렉션</a>
                 <a href="#">센서리가든</a>
             </dd>
-            <p><a href="#">진저오렌지</a></p>
-            <p><a href="#">선물 추천</a></p>
-            <dt><span>SALE<img src="./images/mainPage(mobile)/icon_dropdown_m.png" alt="토글 화살표"></span></dt>
+            <dt class="solo"><a href="#">진저오렌지</a></dt>
+            <dt class="solo"><a href="#">선물 추천</a></dt>
+            <dt><span>SALE<img src="./images/svg/bottomArrow.svg" alt="토글 화살표"></span></dt>
             <dd>
                 <a href="#">SPECIAL PRICE</a>
             </dd>
-            <dt><span>홈 & 향수<img src="./images/mainPage(mobile)/icon_dropdown_m.png" alt="토글 화살표"></span></dt>
+            <dt><span>홈 & 향수<img src="./images/svg/bottomArrow.svg" alt="토글 화살표"></span></dt>
             <dd>
                 <a href="#">아로마 디퓨저</a>
                 <a href="#">향수</a>
                 <a href="#">패브릭미스트</a>
             </dd>
-            <dt><span>ABOUT US<img src="./images/mainPage(mobile)/icon_dropdown_m.png" alt="토글 화살표"></span></dt>
+            <dt><span>ABOUT US<img src="./images/svg/bottomArrow.svg" alt="토글 화살표"></span></dt>
             <dd>
                 <a href="#">브랜드 스토리</a>
                 <a href="#">SABON 3 STEPS</a>
                 <a href="#">FALL IN SCRUB</a>
                 <a href="#">HOW TO OPEN SCRUB</a>
             </dd>
-            <dt><span>멤버십 혜택<img src="./images/mainPage(mobile)/icon_dropdown_m.png" alt="토글 화살표"></span></dt>
+            <dt><span>멤버십 혜택<img src="./images/svg/bottomArrow.svg" alt="토글 화살표"></span></dt>
             <dd>
                 <a href="#">MEMBERSHIP PROGRAM</a>
             </dd>
-            <p><a href="#">이달의 프로모션</a></p>
-            <p><a href="#">기업용 선물 서비스</a></p>
+            <dt class="solo"><a href="#">이달의 프로모션</a></dt>
+            <dt class="solo"><a href="#">기업용 선물 서비스</a></dt>
+            <dd></dd>
         </dl>
     </div>
     <div id="mb_wrap">
@@ -555,7 +560,7 @@
             </div>
         </div>
         <div class="mb_section1">
-            <h1>BEST SELLER</h1>
+            <h5>BEST SELLER</h5>
             <div class="tab">
                 <span class="tab-item">인기 랭킹</span><div></div><span class="tab-item">선물 추천</span><div></div><span class="tab-item">추천 상품</span>
             </div>
@@ -671,7 +676,7 @@
             <div><a href="#"><img src="./images/mainPage(mobile)/mb_sale.jpeg" alt="공식몰 신규 가입한 첫 구매 고객님께 10% 할인 및 특별 선물을 드립니다."></a></div>
             <div><a href="#"><img src="./images/mainPage(mobile)/mb_sample.jpeg" alt="공식물 가입 고객님께 구매 시 원하는 샘플을 직접 선택하는 맞춤형 샘플 서비스"></a></div>
             <p><span>SABON</span>에게 지금 이 순간은<br>항상 선물입니다.</p>
-            <h1>DISCOVER SABON</h1>
+            <h5>DISCOVER SABON</h5>
             <p>사봉은 고품질의 식물성 오일, 사해로부터 얻은<br>
                 소중한 성분을 사봉만의 레시피에 담아 만든 제품으로<br>
                 일상에 기쁨을 안겨주는 감성 라이프스타일 브랜드입니다.<br>
@@ -680,7 +685,7 @@
                 즐길 수 있도록 하는 것이 사봉이 추구하는 가치입니다.
             </p>
             <div class="mb_instagram">
-                <h1>INSTAGRAM</h1>
+                <h5>INSTAGRAM</h5>
                 <p>@sabonkorea_official</p>
                 <div class="mb_insta1">
                     <div><a href="#"><img src="./images/mainPage(mobile)/instagramImg1.jpeg" alt="인스타그램 바로가기"></a></div>
@@ -690,7 +695,7 @@
                     <div><a href="#"><img src="./images/mainPage(mobile)/instagramImg7.jpeg" alt="인스타그램 바로가기"></a></div>
                     <div><a href="#"><img src="./images/mainPage(mobile)/instagramImg4.jpeg" alt="인스타그램 바로가기"></a></div>
                 </div>
-                <div class="mb_insta2"><a href="#"><img src="./images/mainPage(mobile)/mb_instagram.svg" alt="Sunny Cocktail Limited Edition 이벤트 페이지 바로가기"></a></div>
+                <div class="mb_insta2"><a href="#"><img src="./images/mainPage(mobile)/mb_instagramImg5.png" alt="Sunny Cocktail Limited Edition 이벤트 페이지 바로가기"></a></div>
             </div>
         </div>
         <div class="mb_footer">
